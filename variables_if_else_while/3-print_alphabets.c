@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- *  * main - print the alphabet lower and upper
- *   * Return: Always 0
- *    */
+ * main - print the alphabet lower and upper
+ * Return: Always 0
+ */
 int main(void)
 {
 	char alphabet;
