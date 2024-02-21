@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - print the alphabet lower exept 'q' and 'e'
+ * main - print the alphabet lower exept q and e
  * Return: Always 0
  */
 int main(void)
@@ -10,7 +10,7 @@ int main(void)
 	char alphabet;
 
 	for (alphabet ='a'; alphabet <='z'; alphabet++)
-			if (alphabet !='q','e')
+			if (alphabet !='q'; alphabet !='e')
 			putchar(alphabet);
 
 	putchar('\n')
