@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * I thought it was a doc line
+ * main - print the last digit is positive or negative or zero
  *
  * Return: 0
  */
