@@ -11,9 +11,10 @@ int main(void)
 
 	for (last = '0'; last <= '9'; last++)
 	{
-		putachar(last);
+		putchar(last);
 	}
+	for (last = ','; last <= ' '; last++)
 
-	putchar('\n')
+	putchar('\n');
 	return(0);
 }
