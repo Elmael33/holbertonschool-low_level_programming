@@ -7,13 +7,18 @@
  */
 int main(void)
 {
-	char last;
+	int last;
 
 	for (last = '0'; last <= '9'; last++)
 	{
 		putchar(last);
+		if (last < '9')
+		{
+
+		putchar(',');
+		putchar(' ');
+		}
 	}
-	for (last = ','; last <= ' '; last++)
 
 	putchar('\n');
 	return(0);
