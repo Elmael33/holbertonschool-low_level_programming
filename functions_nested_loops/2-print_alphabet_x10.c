@@ -1,10 +1,10 @@
-#include "main.A"
+#include "main.h"
 #include <unistd.h>
 /**
  * main - print alphabet 10x
  * Return: Always 0
  */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	int g = 0;
 	char alphab;
@@ -12,8 +12,8 @@ void print_alphabet_x10(void);
 	{	
 		for (alphab = 'a'; alphab <= 'z'; alphab++)
 		{
-			_putchar(alphab)
+			_putchar(alphab);
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
