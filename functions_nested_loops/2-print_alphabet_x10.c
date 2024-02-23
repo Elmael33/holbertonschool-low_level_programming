@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.A"
 #include <unistd.h>
 /**
  * main - print alphabet 10x
@@ -6,9 +6,9 @@
  */
 void print_alphabet_x10(void);
 {
-	int A = '0';
+	int g = 0;
 	char alphab;
-	while (A++ < 10)
+	while (g++ < 10)
 	{	
 		for (alphab = 'a'; alphab <= 'z'; alphab++)
 		{
@@ -16,5 +16,4 @@ void print_alphabet_x10(void);
 		}
 		_putchar('\n')
 	}
-	return (0);
 }
