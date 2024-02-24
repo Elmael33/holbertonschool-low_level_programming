@@ -3,18 +3,18 @@
 /**
  * _abs - compute the absolute value of n
  * @n: absolute integer
- * Return: Always 0
+ * Return: absolute value n
  */
 int _abs(int n)
 {
-	if (n >= '0')
+	if (n >= 0)
 	{
 		return (n);
 	}
-	else if (n <= '0')
+	else if (n < 0)
 	{
 		return (-n);
 	}
 	else
-		return (0);
+		return (n);
 }
