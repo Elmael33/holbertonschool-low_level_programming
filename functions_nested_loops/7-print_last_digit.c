@@ -11,7 +11,7 @@ int print_last_digit(int numo)
 
 	if (last_digit < 0)
 	{
-		last_digit != -1;
+		last_digit = -1;
 	}
 
 	_putchar(last_digit + '0');
