@@ -2,6 +2,7 @@
 #include <unistd.h>
 /**
  * print_sign - print the sign of a number
+ * @n: check the sign if a number is upper or lower
  * Return: Always 0
  */
 int print_sign(int n)
