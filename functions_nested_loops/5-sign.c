@@ -4,14 +4,14 @@
  * print_sign - print the sign of a number
  * Return: Always 0
  */
-int print_sign(int numo)
+int print_sign(int n)
 {
-	if (numo > '0')
+	if (n > '0')
 	{
 		_putchar('+');
 		return (1);
 	}
-	else if (numo < '0')
+	else if (n < '0')
 	{
 		_putchar('-');
 		return (-1);
