@@ -44,6 +44,6 @@ void print_to_98(int n)
 				_putchar(bresil / 10 + '0');
 			}
 		}
-	_putchar('\n');
 	}
+	_putchar('\n');
 }
