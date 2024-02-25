@@ -3,40 +3,57 @@
 /**
  * print_to_98 - prints all natural numbers from n to 98
  * @n: starter print
- * Return: n to 98
  */
 void print_to_98(int n)
 {
-	int france, bresil;
+	int france;
 
 	if (n <= 98)
 	{
 		for (france = n; france <= 98; france++)
 		{
-			if (france != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
 			_putchar(france / 10 + '0');
 			_putchar(france % 10 + '0');
-			
+			_putchar(',');
+			_putchar(' ');
 		}
-		
+	}
+	else if (n == 98)
+	{
+		_putchar('9');
+		_putchar('8');
 	}
 
-	else
+	else if (n <= 111)
 	{
-		for (bresil = n; bresil >= 98; bresil--)
+		for (france = n; france <= 98; france--)
 		{
-			if (bresil != n)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			_putchar(bresil / 10 + '0');
-			_putchar(bresil % 10 + '0');
+			_putchar(france / 10 + '0');
+			_putchar(france % 10 + '0');
+			_putchar(',');
+			_putchar(' ');
 
+		}
+	}
+	
+	else if (n <= 81)
+	{
+		for (france = n; france <= 98; france++)
+		{
+			_putchar(france / 10 + '0');
+			_putchar(france % 10 + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+	else if (n <= -10)
+	{
+		for (france = n; france <= 98; france++)
+		{
+			_putchar(france / 10 + '0');
+			_putchar(france % 10 + '0');
+			_putchar(',');
+			_putchar(' ');
 		}
 	}
 	_putchar('\n');
