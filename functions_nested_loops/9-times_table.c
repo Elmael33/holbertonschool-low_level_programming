@@ -1,8 +1,10 @@
 #include "main.h"
 #include <unistd.h>
+#include <stdio.h>
 /**
- *
- *
+ * times_table - prints the 9 times table, starting with 0
+ * @numbers, symbols, characters: actor value
+ * Return: time table
  */
 void times_table(void)
 {
@@ -17,14 +19,22 @@ void times_table(void)
 	{
 		_putchar(',');
 		_putchar(' ');
-		
-		if (characters <= 9)
-			_putchar(' ');}
-		else
-			_putchar((characters / 10 + '0');
-
-		_putchar((characters % 10) + '0');
 	}
-	putchar('\n');
+
+	characters = numbers * symbols;
+
+	if (characters <= 9)
+	{
+		_putchar(' ');
+	}
+	else
+	{
+		_putchar((characters / 10) + '0');
+	}
+
+	_putchar((characters % 10) + '0');
+
+	_putchar('\n');
 }
+
 
