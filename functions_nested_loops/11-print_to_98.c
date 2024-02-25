@@ -1,17 +1,17 @@
 #include "main.h"
 #include <unistd.h>
 /**
- *
- *
- *
+ * print_to_98 - prints all natural numbers from n to 98
+ * @n: starter print
+ * Return: n to 98
  */
 void print_to_98(int n)
 {
-	int france,bresil;
+	int france, bresil;
 
 	if (n >= 98)
 	{
-		for (france = n; france <= 98; france++);
+		for (france = n; france <= 98; france++)
 		{
 			if (france != 98)
 			{
@@ -40,8 +40,8 @@ void print_to_98(int n)
 			}
 			else
 			{
-				_putchar(bresil / 10 = '0');
-				_putchar(bresil / 10 = '0');
+				_putchar(bresil / 10 + '0');
+				_putchar(bresil / 10 + '0');
 			}
 		}
 	_putchar('\n');
