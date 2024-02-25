@@ -12,7 +12,7 @@ void times_table(void)
 
 	for (numbers = 0; numbers <= 9; numbers++)
 	{
-		for (symbols = 1; symbols <= 9; symbols++)
+		for (symbols = 0; symbols <= 9; symbols++)
 		{
 			characters = numbers * symbols;
 
@@ -20,14 +20,14 @@ void times_table(void)
 			{
 				_putchar(characters + '0');
 			}
-			else if (characters < 9 && symbols != 0)
+			else if (characters < 10)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(characters + '0');
+				_putchar((characters % 10) + '0');
 			}
-			else if (characters >= 9)
+			else
 			{
 				_putchar(',');
 				_putchar(' ');
