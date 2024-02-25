@@ -6,14 +6,14 @@
  */
 void print_to_98(int n)
 {
-	int france;
+	int a,b,c,d;
 
 	if (n <= 98)
 	{
-		for (france = n; france <= 98; france++)
+		for (a = n; a <= 98; a++)
 		{
-			_putchar(france / 10 + '0');
-			_putchar(france % 10 + '0');
+			_putchar(a / 10 + '0');
+			_putchar(a % 10 + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
@@ -24,34 +24,35 @@ void print_to_98(int n)
 		_putchar('8');
 	}
 
-	else if (n <= 111)
+	else if (n >= 111)
 	{
-		for (france = n; france <= 98; france--)
+		for (b = n; b >= 98; b--)
 		{
-			_putchar(france / 10 + '0');
-			_putchar(france % 10 + '0');
+			_putchar(b / 100 + '0');
+			_putchar((b / 10) %10 + '0');
+			_putchar(b % 10 + '0');
 			_putchar(',');
 			_putchar(' ');
 
 		}
 	}
-	
+
 	else if (n <= 81)
 	{
-		for (france = n; france <= 98; france++)
+		for (c = n; c <= 98; c++)
 		{
-			_putchar(france / 10 + '0');
-			_putchar(france % 10 + '0');
+			_putchar(c / 10 + '0');
+			_putchar(c % 10 + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
 	}
 	else if (n <= -10)
 	{
-		for (france = n; france <= 98; france++)
+		for (d = n; d <= 98; d++)
 		{
-			_putchar(france / 10 + '0');
-			_putchar(france % 10 + '0');
+			_putchar(d / 10 + '0');
+			_putchar(d % 10 + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
