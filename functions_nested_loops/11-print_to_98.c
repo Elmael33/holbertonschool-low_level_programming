@@ -9,7 +9,7 @@ void print_to_98(int n)
 {
 	int france, bresil;
 
-	if (n >= 98)
+	if (n <= 98)
 	{
 		for (france = n; france <= 98; france++)
 		{
@@ -27,7 +27,7 @@ void print_to_98(int n)
 			}
 		}
 	}
-	else if (n <= 98)
+	else if (n >= 98)
 	{
 		for (bresil = n; bresil >= 98; bresil--)
 		{
