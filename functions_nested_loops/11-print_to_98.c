@@ -2,55 +2,50 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * print_to_98 - prints all natural numbers from n to 98
- * @n: starter number and integer
- *
  * print_number - prints the integer value and including a negative sign
- * @numo: integer value to be printed as a string
- */
-
-void print_number(int numo)
+ * @num: integer value to be printed as a string
+*/
+void print_number(int num)
 {
-	if (numo < 0)
+	if (num < 0)
 	{
 		_putchar('-');
-		numo = -numo;
+		num = -num;
 	}
-	if (numo >= 10)
-	{
-		print_number(numo / 10);
-	}
-	_putchar('0' + numo % 10);
-}
+	if (num >= 10)
+		print_number(num / 10);
 
+	_putchar('0' + num % 10);
+
+}
+/**
+ * print_to_98 - prints all natural numbers from n to 98
+ * @n: starter number and integer
+ */
 void print_to_98(int n)
 {
-	int a, b;
+	int i, j;
 
 	if (n <= 98)
 	{
-		for (a = n; a <= 98; a++)
+		for (i = n; i <= 98; i++)
 		{
-			print_number(a);
+			print_number(i);
 
-			if (a != 98)
-			{
+			if (i != 98)
 				_putchar(',');
-				_putchar(' ');
-			}
+			_putchar(' ');
 		}
 	}
 	else
 	{
-		for (b = n; b >= 98; b--)
+		for (j = n; j >= 98; j--)
 		{
-			print_number(b);
+			print_number(j);
 
-			if (b != 98)
-			{
+			if (j != 98)
 				_putchar(',');
-				_putchar(' ');
-			}
+			_putchar(' ');
 		}
 	}
 	_putchar('\n');
