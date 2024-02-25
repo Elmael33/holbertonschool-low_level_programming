@@ -17,32 +17,26 @@ void print_to_98(int n)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(france / 10 + '0');
-				_putchar(france % 10 + '0');
 			}
-			else
-			{
-				_putchar(france / 10 + '0');
-				_putchar(france % 10 + '0');
-			}
+			_putchar(france / 10 + '0');
+			_putchar(france % 10 + '0');
+			
 		}
+		
 	}
-	else if (n >= 98)
+
+	else
 	{
 		for (bresil = n; bresil >= 98; bresil--)
 		{
-			if (bresil != 98)
+			if (bresil != n)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(bresil / 10 + '0');
-				_putchar(bresil % 10 + '0');
 			}
-			else
-			{
-				_putchar(bresil / 10 + '0');
-				_putchar(bresil / 10 + '0');
-			}
+			_putchar(bresil / 10 + '0');
+			_putchar(bresil % 10 + '0');
+
 		}
 	}
 	_putchar('\n');
