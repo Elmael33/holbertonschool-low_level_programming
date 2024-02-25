@@ -33,8 +33,10 @@ void print_to_98(int n)
 			print_number(i);
 
 			if (i != 98)
+			{
 				_putchar(',');
-			_putchar(' ');
+				_putchar(' ');
+			}
 		}
 	}
 	else
@@ -44,8 +46,10 @@ void print_to_98(int n)
 			print_number(j);
 
 			if (j != 98)
+			{
 				_putchar(',');
-			_putchar(' ');
+				_putchar(' ');
+			}
 		}
 	}
 	_putchar('\n');
