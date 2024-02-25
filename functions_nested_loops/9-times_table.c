@@ -23,15 +23,15 @@ void times_table(void)
 			else if (characters < 9 && symbols != 0)
 			{
 				_putchar(',');
-				_putchar('.');
-				_putchar('.');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(characters + '0');
 			}
 			else if (characters >= 9)
 			{
 				_putchar(',');
-				_putchar('.');
-				_putchar('I');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar((characters / 10) + '0');
 				_putchar((characters % 10) + '0');
 			}
