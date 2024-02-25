@@ -2,7 +2,8 @@
 #include <unistd.h>
 /**
  * add - adds two integers and returns the result
- * @oui,non: integers
+ * @oui: integers
+ * @non: integers
  * Return: ca_va
  */
 int add(int oui, int non)
