@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_line - draws a straight line in the terminal
+ * @n: integer
  * Return: _
  */
 void print_line(int n)
