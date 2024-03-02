@@ -4,7 +4,7 @@
  * @str: pointeur
  * Return: 0
  */
-void puts2(char * str)
+void puts2(char *str)
 {
 	int a = 0;
 
