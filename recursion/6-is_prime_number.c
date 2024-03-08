@@ -4,7 +4,7 @@ int is_prime(int n, int r);
 /**
  * prime_number - seconde fonction to check for prime number
  * @n: int
- * @r: int
+ * @a: int
  * Return: (always) succes
  */
 int prime_number(int n, int a)
