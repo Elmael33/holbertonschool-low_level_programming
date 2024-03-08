@@ -1,34 +1,30 @@
 #include "main.h"
-#include <stdio.h>
 #include <math.h>
+int is_prime(int n, int r);
 /**
- * _sqrt_recursion - calculate returns the natural square root of a number
- * @n: int
- * Return: (always) succes
- */
-int _sqrt_recursion(int n)
-{
-
-	if (n < 0)
-		return (-1);
-	return (square_root(n, 1));
-}
-
-/**
- * square_root - calculate natural square root.
+ * prime_number - seconde fonction to check for prime number
  * @n: int
  * @r: int
  * Return: (always) succes
  */
-int square_root(int n, int a)
+int prime_number(int n, int a)
 {
-	if (a * a == n)
+	if (a >= n && n > 1)
+		return (1);
+	else if (n % a == 0 || n <= 1)
 	{
-		return (a);
+		return (0);
 	}
-	else if (a * a < n)
-	{
-		return (square_root(n, a + 1));
-	}
-	return (-1);
+	else
+		return (prime_number(n, a + 1));
+}
+
+/**
+ * is_prime_number - check for prime number
+ * @n: int
+ * Return: (alwayss) succes
+ */
+int is_prime_number(int n)
+{
+	return (prime_number(n, 2));
 }
