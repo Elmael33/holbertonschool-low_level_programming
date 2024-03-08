@@ -8,27 +8,29 @@
  */
 int _sqrt_recursion(int n)
 {
-
-        if (n < 0)
-                return (-1);
-        return (square_root(n, 1));
+	if (n < 0)
+	{
+		return (-1);
+	}
+	{
+		return (square_root(n, 1));
+	}
 }
-
 /**
  * square_root - calculate natural square root.
  * @n: int
- * @r: int
+ * @a: int
  * Return: (always) succes
  */
 int square_root(int n, int a)
 {
-        if (a * a == n)
-        {
-                return (a);
-        }
-        else if (a * a < n)
-        {
-                return (square_root(n, a + 1));
-        }
-        return (-1);
+	if (a * a == n)
+	{
+		return (a);
+	}
+	else if (a * a < n)
+	{
+		return (square_root(n, a + 1));
+	}
+	return (-1);
 }
