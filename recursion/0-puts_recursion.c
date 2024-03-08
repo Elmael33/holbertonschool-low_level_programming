@@ -1,21 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _puts_recursion - rints a string using recursion
- * @s: Pointer
+ * _puts_recursion - prints a string
+ * @s: pointer
+ * Return: (always) succes
  */
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
 		_putchar('\n');
-		{
-			return;
-		}
 	}
-	_²putchar(*s);
+	else
 	{
-		s++;
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
-	_puts_recursion(s);
 }
