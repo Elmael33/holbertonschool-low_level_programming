@@ -4,6 +4,7 @@
  * _memcpy - copies memory area
  * @dest: destination string
  * @src: source string
+ * @n: int
  * Return: 0
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
