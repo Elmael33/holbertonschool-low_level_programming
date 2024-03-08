@@ -1,30 +1,34 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
+/**
+ * _sqrt_recursion - calculate returns the natural square root of a number
+ * @n: int
+ * Return: (always) succes
+ */
+int _sqrt_recursion(int n)
+{
+
+	if (n < 0)
+		return (-1);
+	return (square_root(n, 1));
+}
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * square_root - calculate natural square root.
+ * @n: int
+ * @r: int
+ * Return: (always) succes
  */
-int main(void)
+int square_root(int n, int a)
 {
-    int r;
-
-    r = is_prime_number(1);
-    printf("%d\n", r);
-    r = is_prime_number(1024);
-    printf("%d\n", r);
-    r = is_prime_number(16);
-    printf("%d\n", r);
-    r = is_prime_number(17);
-    printf("%d\n", r);
-    r = is_prime_number(25);
-    printf("%d\n", r);
-    r = is_prime_number(-1);
-    printf("%d\n", r);
-    r = is_prime_number(113);
-    printf("%d\n", r);
-    r = is_prime_number(7919);
-    printf("%d\n", r);
-    return (0);
+	if (a * a == n)
+	{
+		return (a);
+	}
+	else if (a * a < n)
+	{
+		return (square_root(n, a + 1));
+	}
+	return (-1);
 }
