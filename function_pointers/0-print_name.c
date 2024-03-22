@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 #include <stddef.h>
 /**
- * print_name - Prints a name
+ * print_name - prints a name
  * @name: pointer name
  * @f: pointer
  * Return: (always) succes
